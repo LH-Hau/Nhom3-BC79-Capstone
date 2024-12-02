@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-<!-- <NgocTan> -->
+    <!-- <NgocTan> -->
     <header class="will-change-transform">
       <div
-        class="header__content max-w-screen-lg mx-auto px-5 top-0 border-b  z-20 border-transparent py-5 transition-all sticky"
+        class="header__content max-w-screen-lg mx-auto px-5 top-0 border-b z-20 border-transparent py-5 transition-all sticky"
       >
         <div
           class="container flex flex-col lg:flex-row justify-between items-center relative z-10"
@@ -32,15 +32,79 @@
                 >PRO</span
               >
             </a>
-            <div class="block lg:hidden"></div>
+            <div class="block lg:hidden">
+              <button id="astronav-menu" aria-label="Toggle menu">
+                <svg
+                  fill="currentColor"
+                  class="w-4 h-4 text-gray-800"
+                  width="24"
+                  height="24"
+                  viewbox="0 0 24 24"
+                  xmls="http://www.w3.org/2000/svg"
+                ></svg>
+              </button>
+            </div>
           </div>
-          <div class="header__center">
-            <nav class="flex flex-grow">
-              <a href="#">Pages</a>
-              <a href="#">Pricing</a>
-              <a href="#">About</a>
-              <a href="#">Blog</a>
-              <a href="#">Contact</a>
+          <div
+            class="header__center w-full lg:w-auto mt-2 lg:flex lg:mt-0 hidden"
+          >
+            <nav>
+              <ul class="flex flex-col lg:flex-row lg:gap-3">
+                <li class="relative z-50 isolate">
+                  <menu class="astronav-dropdown group" aria-expanded="false">
+                    <button
+                      class="flex items-center gap-1 text-sm w-full lg:w-auto transition lg:px-3 py-2 text-gray-600 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo rounded-full"
+                    >
+                      <span>Pages</span>
+                      <img src="" alt="" />
+                      <svg
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g>
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                    <div
+                      class="lg:absolute w-full lg:w-48 z-50 border-l lg:border-0 border-slate-200"
+                    ></div>
+                  </menu>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex lg:px-3 py-2 text-sm text-gray-600 hover:text-indigo-600 focus-visible:ring-2 focus-visible:ring-offset-2 transition focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo rounded-full"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex lg:px-3 py-2 text-sm text-gray-600 hover:text-indigo-600 focus-visible:ring-2 focus-visible:ring-offset-2 transition focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo rounded-full"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex lg:px-3 py-2 text-sm text-gray-600 hover:text-indigo-600 focus-visible:ring-2 focus-visible:ring-offset-2 transition focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo rounded-full"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex lg:px-3 py-2 text-sm text-gray-600 hover:text-indigo-600 focus-visible:ring-2 focus-visible:ring-offset-2 transition focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo rounded-full"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
             </nav>
           </div>
           <div class="header__right flex-row">
@@ -52,13 +116,13 @@
     </header>
     <section class="banner"></section>
     <section class="features"></section>
-<!-- </NgocTan> -->
+    <!-- </NgocTan> -->
 
-<!-- <HuuHau> -->
+    <!-- <HuuHau> -->
     <section class="carousel"></section>
     <section class="blogs"></section>
     <section class="morefeatures"></section>
     <section class="footer"></section>
-<!-- </HuuHau> -->
+    <!-- </HuuHau> -->
   </body>
 </html>
